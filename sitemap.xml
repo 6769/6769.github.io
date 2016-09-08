@@ -4,133 +4,133 @@ xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitem
 xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
 <url>
-<loc>blog.5pipi.win/</loc>
-<lastmod>2016-09-08T21:41:10-00:00</lastmod>
+<loc>/</loc>
+<lastmod>2016-09-08T21:46:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/archives.html</loc>
-<lastmod>2016-09-08T21:41:10-00:00</lastmod>
+<loc>/archives.html</loc>
+<lastmod>2016-09-08T21:46:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/tags.html</loc>
-<lastmod>2016-09-08T21:41:10-00:00</lastmod>
+<loc>/tags.html</loc>
+<lastmod>2016-09-08T21:46:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/categories.html</loc>
-<lastmod>2016-09-08T21:41:10-00:00</lastmod>
+<loc>/categories.html</loc>
+<lastmod>2016-09-08T21:46:17-00:00</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/MarkdownFully-reference/</loc>
+<loc>/blog/pages/2016/09/07/MarkdownFully-reference/</loc>
 <lastmod>2016-09-07T23:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/about-plugins/</loc>
+<loc>/blog/pages/2016/09/07/about-plugins/</loc>
 <lastmod>2016-09-07T23:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/about-sites-build/</loc>
+<loc>/blog/pages/2016/09/07/about-sites-build/</loc>
 <lastmod>2016-09-07T23:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/use-github-io/</loc>
+<loc>/blog/pages/2016/09/07/use-github-io/</loc>
 <lastmod>2016-09-07T23:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/my-super-post-global-design/</loc>
+<loc>/blog/pages/2016/09/07/my-super-post-global-design/</loc>
 <lastmod>2016-09-07T03:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/blog/pages/2016/09/07/my-super-post-global-design-page-improve/</loc>
+<loc>/blog/pages/2016/09/07/my-super-post-global-design-page-improve/</loc>
 <lastmod>2016-09-07T03:28:03+08:00</lastmod>
 <changefreq>monthly</changefreq>
 <priority>0.7</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/category/init.html</loc>
+<loc>/category/init.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/category/language.html</loc>
+<loc>/category/language.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/tag/pelican.html</loc>
+<loc>/tag/pelican.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/tag/markdown.html</loc>
+<loc>/tag/markdown.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/tag/design.html</loc>
+<loc>/tag/design.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/tag/publishing.html</loc>
+<loc>/tag/publishing.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/author/5pipi.html</loc>
+<loc>/author/5pipi.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/author/alexis-metaireau.html</loc>
+<loc>/author/alexis-metaireau.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
 </url>
 
 <url>
-<loc>blog.5pipi.win/author/conan-doyle.html</loc>
+<loc>/author/conan-doyle.html</loc>
 <lastmod>2016-09-07T23:28:03+08:06</lastmod>
 <changefreq>daily</changefreq>
 <priority>0.5</priority>
