@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns# fb: https://www.facebook.com/2008/fbml">
+<head>
+    <title>Markdown Language Syntex - TimeMachine</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+
+<link rel="canonical" href="/blog/pages/2016/09/07/MarkdownFully-reference/">
+
+        <meta name="author" content="5pipi" />
+        <meta name="keywords" content="Design,markdown" />
+        <meta name="description" content="MarkdownFully reference" />
+
+        <meta property="og:site_name" content="TimeMachine" />
+        <meta property="og:type" content="article"/>
+        <meta property="og:title" content="Markdown Language Syntex"/>
+        <meta property="og:url" content="/blog/pages/2016/09/07/MarkdownFully-reference/"/>
+        <meta property="og:description" content="MarkdownFully reference"/>
+        <meta property="article:published_time" content="2016-09-07" />
+            <meta property="article:section" content="Language" />
+            <meta property="article:tag" content="Design" />
+            <meta property="article:tag" content="markdown" />
+            <meta property="article:author" content="5pipi" />
+
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="/theme/css/font-awesome.min.css" rel="stylesheet">
+
+    <link href="/theme/css/pygments/native.css" rel="stylesheet">
+    <link rel="stylesheet" href="/theme/css/style.css" type="text/css"/>
+
+
+
+
+
+</head>
+<body>
+
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+	<div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="/" class="navbar-brand">
+TimeMachine            </a>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                        <li >
+                            <a href="/category/init.html">Init</a>
+                        </li>
+                        <li class="active">
+                            <a href="/category/language.html">Language</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</div> <!-- /.navbar -->
+<!-- Banner -->
+<!-- End Banner -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm-9">
+    <section id="content">
+        <article>
+            <header class="page-header">
+                <h1>
+                    <a href="/blog/pages/2016/09/07/MarkdownFully-reference/"
+                       rel="bookmark"
+                       title="Permalink to Markdown Language Syntex">
+                        Markdown Language Syntex
+                    </a>
+                </h1>
+            </header>
+            <div class="entry-content">
+                <div class="panel">
+                    <div class="panel-body">
+<footer class="post-info">
+    <span class="label label-default">Date</span>
+    <span class="published">
+        <i class="fa fa-calendar"></i><time datetime="2016-09-07T14:44:16+08:00"> 周三 07 九月 2016</time>
+    </span>
+
+
+
+
+
+<span class="label label-default">Tags</span>
+	<a href="/tag/design.html">Design</a>
+        /
+	<a href="/tag/markdown.html">markdown</a>
+    
+</footer><!-- /.post-info -->                    </div>
+                </div>
+                <h1>Markdown For Typora</h1>
+<h2>Overview</h2>
+<p><strong>Markdown</strong> is created by <a href="http://daringfireball.net/">Daring Fireball</a>, the original guideline is <a href="http://daringfireball.net/projects/markdown/syntax">here</a>. Its syntax, however, varies between different parsers or editors. <strong>Typora</strong> is using <a href="https://help.github.com/articles/github-flavored-markdown/">GitHub Flavored Markdown</a>. </p>
+<p>Please note that HTML fragments in markdown source will be recognized but not parsed or rendered. Also, there may be small reformatting on the original markdown source code after saving.</p>
+<p><em>Outline</em></p>
+<p>[TOC]</p>
+<h2>Block Elements</h2>
+<h3>Paragraph and line breaks</h3>
+<p>A paragraph is simply one or more consecutive lines of text. In markdown source code, paragraphs are separated by more than one blank lines. In Typora, you only need to press <code>Return</code> to create a new paragraph.</p>
+<p>Press <code>Shift</code> + <code>Return</code> to create a single line break. However, most markdown parser will ignore single line break, to make other markdown parsers recognize your line break, you can leave two whitespace at the end of the line, or insert <code>&lt;br/&gt;</code>.</p>
+<h3>Headers</h3>
+<p>Headers use 1-6 hash characters at the start of the line, corresponding to header levels 1-6. For example:</p>
+<div class="highlight"><pre><span></span># This is an H1
+
+## This is an H2
+
+###### This is an H6
+</pre></div>
+
+
+<p>In typora, input ‘#’s followed by title content, and press <code>Return</code> key will create a header.</p>
+<h3>Blockquotes</h3>
+<p>Markdown uses email-style &gt; characters for block quoting. They are presented as:</p>
+<div class="highlight"><pre><span></span>&gt; This is a blockquote with two paragraphs. This is first paragraph.
+&gt;
+&gt; This is second pragraph.Vestibulum enim wisi, viverra nec, fringilla in, laoreet vitae, risus.
+
+
+
+&gt; This is another blockquote with one paragraph. There is three empty line to seperate two blockquote.
+</pre></div>
+
+
+<p>In typora, just input ‘&gt;’ followed by quote contents a block quote is  generated. Typora will insert proper ‘&gt;’ or line break for you. Block quote inside anther block quote is allowed by adding additional levels of ‘&gt;’. </p>
+<h3>Lists</h3>
+<p>Input <code>* list item 1</code> will create an un-ordered list, the <code>*</code> symbol can be replace with <code>+</code> or <code>-</code>. </p>
+<p>Input <code>1. list item 1</code> will create an ordered list, their markdown source code is like:</p>
+<div class="highlight"><pre><span></span>## un-ordered list
+*   Red
+*   Green
+*   Blue
+
+## ordered list
+1.  Red
+2.  Green
+3.  Blue
+</pre></div>
+
+
+<h3>Task List</h3>
+<p>Task lists are lists with items marked as either [ ] or [x] (incomplete or complete). For example:</p>
+<div class="highlight"><pre><span></span>- [ ] a task list item
+- [ ] list syntax required
+- [ ] normal **formatting**, @mentions, #1234 refs
+- [ ] incomplete
+- [x] completed
+</pre></div>
+
+
+<p>You can change the complete/incomplete state by click the checkbox before the item.</p>
+<h3>(Fenced) Code Blocks</h3>
+<p>Typora only support fences in Github Flavored Markdown. Original code blocks in markdown is not supported.</p>
+<p>Using fences is easy: Input ``` and press <code>return</code>. Add an optional language identifier after ``` and we'll run it through syntax highlighting:</p>
+<div class="highlight"><pre><span></span>Here&#39;s an example:
+
+​```
+function test() {
+  console.log(&quot;notice the blank line before this function?&quot;);
+}
+​```
+
+syntax highlighting:
+​```ruby
+require &#39;redcarpet&#39;
+markdown = Redcarpet.new(&quot;Hello World!&quot;)
+puts markdown.to_html
+​```
+</pre></div>
+
+
+<h3>Math Blocks</h3>
+<p>You can render <em>LaTeX</em> mathematical expressions using <strong>MathJax</strong>.</p>
+<p>Input <code>$$</code>, then press 'Return' key will trigger an input field which accept <em>Tex/LaTex</em> source. Following is an example:
+</p>
+<div class="math">$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
+\end{vmatrix}
+$$</div>
+<p>In markdown source file, math block is <em>LaTeX</em> expression wrapped by ‘$$’ mark:</p>
+<div class="highlight"><pre><span></span>$$
+\mathbf{V}_1 \times \mathbf{V}_2 =  \begin{vmatrix} 
+\mathbf{i} &amp; \mathbf{j} &amp; \mathbf{k} \\
+\frac{\partial X}{\partial u} &amp;  \frac{\partial Y}{\partial u} &amp; 0 \\
+\frac{\partial X}{\partial v} &amp;  \frac{\partial Y}{\partial v} &amp; 0 \\
+\end{vmatrix}
+$$
+</pre></div>
+
+
+<h3>Tables</h3>
+<p>Input <code>| First Header  | Second Header |</code> and press <code>return</code> key will create a table with two column.</p>
+<p>After table is created, focus on that table will pop up a toolbar for table, where you can resize, align, or delete table. You can also use context menu to copy and add/delete column/row.</p>
+<p>Following descriptions can be skipped, as markdown source code for tables are generated by typora automatically.</p>
+<p>In markdown source code, they look like:</p>
+<div class="highlight"><pre><span></span>| First Header  | Second Header |
+| ------------- | ------------- |
+| Content Cell  | Content Cell  |
+| Content Cell  | Content Cell  |
+</pre></div>
+
+
+<p>You can also include inline Markdown such as links, bold, italics, or strikethrough.</p>
+<p>Finally, by including colons : within the header row, you can define text to be left-aligned, right-aligned, or center-aligned:</p>
+<div class="highlight"><pre><span></span><span class="p">|</span> <span class="nv">Left</span><span class="o">-</span><span class="nv">Aligned</span>  <span class="p">|</span> <span class="nv">Center</span> <span class="nv">Aligned</span>  <span class="p">|</span> <span class="nv">Right</span> <span class="nv">Aligned</span> <span class="p">|</span>
+<span class="p">|</span> <span class="p">:-</span><span class="s s-Atom">-----------</span> <span class="p">|:-</span><span class="s s-Atom">--------------:</span><span class="p">|</span> <span class="s s-Atom">-----:</span><span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">col</span> <span class="mi">3</span> <span class="o">is</span>      <span class="p">|</span> <span class="s s-Atom">some</span> <span class="s s-Atom">wordy</span> <span class="s s-Atom">text</span> <span class="p">|</span> <span class="err">$</span><span class="mi">1600</span> <span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">col</span> <span class="mi">2</span> <span class="o">is</span>      <span class="p">|</span> <span class="s s-Atom">centered</span>        <span class="p">|</span>   <span class="err">$</span><span class="mi">12</span> <span class="p">|</span>
+<span class="p">|</span> <span class="s s-Atom">zebra</span> <span class="s s-Atom">stripes</span> <span class="p">|</span> <span class="s s-Atom">are</span> <span class="s s-Atom">neat</span>        <span class="p">|</span>    <span class="err">$</span><span class="mi">1</span> <span class="p">|</span>
+</pre></div>
+
+
+<p>A colon on the left-most side indicates a left-aligned column; a colon on the right-most side indicates a right-aligned column; a colon on both sides indicates a center-aligned column.</p>
+<h3>Footnotes</h3>
+<div class="highlight"><pre><span></span>You can create footnotes like this[^footnote].
+
+[^footnote]: Here is the *text* of the **footnote**.
+</pre></div>
+
+
+<p>will produce:</p>
+<p>You can create footnotes like this<sup id="fnref:footnote"><a class="footnote-ref" href="#fn:footnote" rel="footnote">1</a></sup>.</p>
+<p>Mouse on the ‘footnote’ superscript to see content of the footnote.</p>
+<h3>Horizontal Rules</h3>
+<p>Input <code>***</code> or <code>---</code> on a blank line and press <code>return</code> will draw a horizontal line.</p>
+<hr />
+<h3>YAML Front Matters</h3>
+<p>Typora support <a href="http://jekyllrb.com/docs/frontmatter/">YAML Front Matters</a> now. Input <code>---</code> at the top of the article and then press <code>Enter</code> will introduce one. Or insert one metadata block from the menu.</p>
+<h3>Table of Contents (TOC)</h3>
+<p>Input <code>[toc]</code> then press <code>Return</code> key will create a section for “Table of Contents” extracting all headers from one’s writing, its contents will be updated automatically. </p>
+<h3>Diagrams (Sequence, Flowchart and Mermaid)</h3>
+<p>Typora supports, <a href="https://bramp.github.io/js-sequence-diagrams/">sequence</a>, <a href="http://flowchart.js.org/">flowchart</a> and <a href="https://knsv.github.io/mermaid/#mermaid">mermaid</a>, after this feature is enabled from preference panel.</p>
+<p>See this <a href="http://support.typora.io/Draw-Diagrams-With-Markdown/">document</a> for detail.</p>
+<h2>Span Elements</h2>
+<p>Span elements will be parsed and rendered right after your typing. Moving cursor in middle of those span elements will expand those elements into markdown source. Following will explain the syntax of those span element.</p>
+<h3>Links</h3>
+<p>Markdown supports two style of links: inline and reference.</p>
+<p>In both styles, the link text is delimited by [square brackets].</p>
+<p>To create an inline link, use a set of regular parentheses immediately after the link text’s closing square bracket. Inside the parentheses, put the URL where you want the link to point, along with an optional title for the link, surrounded in quotes. For example:</p>
+<div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">is</span> <span class="p">[</span><span class="n">an</span> <span class="n">example</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//example.com/ &quot;Title&quot;) inline link.</span>
+
+<span class="p">[</span><span class="n">This</span> <span class="n">link</span><span class="p">](</span><span class="nl">http</span><span class="p">:</span><span class="c1">//example.net/) has no title attribute.</span>
+</pre></div>
+
+
+<p>will produce:</p>
+<p>This is <a href="http://example.com/" title="Title">an example</a> inline link. (<code>&lt;p&gt;This is &lt;a href="http://example.com/" title="Title"&gt;</code>)</p>
+<p><a href="http://example.net/">This link</a> has no title attribute. (<code>&lt;p&gt;&lt;a href="http://example.net/"&gt;This link&lt;/a&gt; has no</code>)</p>
+<h4>Internal Links</h4>
+<p><strong>You can set the href to headers</strong>, which will create a bookmark that allow you to jump to that section after clicking. For example:</p>
+<p>Command(on Windows: Ctrl) + Click <a href="#block-elements">This link</a> will jump to header <code>Block Elements</code>. To see how to write that, please move cursor or click that link with <code>⌘</code> key pressed to expand the element into markdown source.</p>
+<h4>Reference Links</h4>
+<p>Reference-style links use a second set of square brackets, inside which you place a label of your choosing to identify the link:</p>
+<div class="highlight"><pre><span></span><span class="n">This</span> <span class="n">is</span> <span class="p">[</span><span class="n">an</span> <span class="n">example</span><span class="p">][</span><span class="kt">id</span><span class="p">]</span> <span class="n">reference</span><span class="o">-</span><span class="n">style</span> <span class="n">link</span><span class="p">.</span>
+
+<span class="n">Then</span><span class="p">,</span> <span class="n">anywhere</span> <span class="k">in</span> <span class="n">the</span> <span class="n">document</span><span class="p">,</span> <span class="n">you</span> <span class="n">define</span> <span class="n">your</span> <span class="n">link</span> <span class="n">label</span> <span class="n">like</span> <span class="n">this</span><span class="p">,</span> <span class="n">on</span> <span class="n">a</span> <span class="n">line</span> <span class="n">by</span> <span class="nl">itself</span><span class="p">:</span>
+
+<span class="p">[</span><span class="kt">id</span><span class="p">]</span><span class="o">:</span> <span class="nl">http</span><span class="p">:</span><span class="c1">//example.com/  &quot;Optional Title Here&quot;</span>
+</pre></div>
+
+
+<p>In typora, they will be rendered like:</p>
+<p>This is <a href="http://example.com/" title="Optional Title Here">an example</a> reference-style link.</p>
+<p>The implicit link name shortcut allows you to omit the name of the link, in which case the link text itself is used as the name. Just use an empty set of square brackets — e.g., to link the word “Google” to the google.com web site, you could simply write:</p>
+<div class="highlight"><pre><span></span><span class="k">[Google][]</span>
+<span class="err">And</span> <span class="err">then</span> <span class="err">define</span> <span class="err">the</span> <span class="err">link:</span>
+
+<span class="err">[Google]:</span> <span class="err">http://google.com/</span>
+</pre></div>
+
+
+<p>In typora click link will expand it for editing, command+click will open the hyperlink in web browser.</p>
+<h3>URLs</h3>
+<p>Typora allows you to insert urls as links, wrapped by <code>&lt;</code>brackets<code>&gt;</code>.</p>
+<p><code>&lt;i@typora.io&gt;</code> becomes <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#105;&#64;&#116;&#121;&#112;&#111;&#114;&#97;&#46;&#105;&#111;">&#105;&#64;&#116;&#121;&#112;&#111;&#114;&#97;&#46;&#105;&#111;</a>.</p>
+<p>Typora will aslo auto link standard URLs. e.g: www.google.com.</p>
+<h3>Images</h3>
+<p>Image looks similar with links, but it requires an additional <code>!</code> char before the start of link. Image syntax looks like this:</p>
+<div class="highlight"><pre><span></span><span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">img</span><span class="p">.</span><span class="n">jpg</span><span class="p">)</span>
+
+<span class="o">!</span><span class="p">[</span><span class="n">Alt</span> <span class="n">text</span><span class="p">](</span><span class="o">/</span><span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">img</span><span class="p">.</span><span class="n">jpg</span> <span class="s">&quot;Optional title&quot;</span><span class="p">)</span>
+</pre></div>
+
+
+<p>You are able to use drag &amp; drop to insert image from image file or we browser. And modify the markdown source code by clicking on the image. Relative path will be used if image is in same directory or sub-directory with current editing document when drag &amp; drop.</p>
+<p>If you’re using markdown for building websites, you may specify a url prefix for image preview in local computer with property <code>typora-root-url</code> in YAML Front Matters. For example, input <code>typora-root-url:/User/Abner/Website/typora.io/</code> in YAML Front Matters, and then <code>![alt](/blog/img/test.png)</code> will be treated as <code>![alt](file:///User/Abner/Website/typora.io/blog/img/test.png)</code> in typora.</p>
+<p><img alt="drag and drop image" src="http://typora.io/img/drag-img.gif" /></p>
+<h3>Emphasis</h3>
+<p>Markdown treats asterisks (<code>*</code>) and underscores (<code>_</code>) as indicators of emphasis. Text wrapped with one <code>*</code> or <code>_</code> will be wrapped with an HTML <code>&lt;em&gt;</code> tag. E.g:</p>
+<div class="highlight"><pre><span></span>*single asterisks*
+
+_single underscores_
+</pre></div>
+
+
+<p>output: </p>
+<p><em>single asterisks</em></p>
+<p><em>single underscores</em></p>
+<p>GFM will ignores underscores in words, which is commonly used in code and names, like this:</p>
+<blockquote>
+<p>wow_great_stuff</p>
+<p>do_this_and_do_that_and_another_thing.</p>
+</blockquote>
+<p>To produce a literal asterisk or underscore at a position where it would otherwise be used as an emphasis delimiter, you can backslash escape it:</p>
+<div class="highlight"><pre><span></span>\*this text is surrounded by literal asterisks\*
+</pre></div>
+
+
+<p>Typora recommends to use <code>*</code> symbol.</p>
+<h3>Strong</h3>
+<p>double *’s or _’s will be wrapped with an HTML <code>&lt;strong&gt;</code> tag, e.g:</p>
+<div class="highlight"><pre><span></span>**double asterisks**
+
+__double underscores__
+</pre></div>
+
+
+<p>output:</p>
+<p><strong>double asterisks</strong></p>
+<p><strong>double underscores</strong></p>
+<p>Typora recommends to use <code>**</code> symbol.</p>
+<h3>Code</h3>
+<p>To indicate a span of code, wrap it with backtick quotes (`). Unlike a pre-formatted code block, a code span indicates code within a normal paragraph. For example:</p>
+<div class="highlight"><pre><span></span>Use the `printf()` function.
+</pre></div>
+
+
+<p>will produce:</p>
+<p>Use the <code>printf()</code> function.</p>
+<h3>Strikethrough</h3>
+<p>GFM adds syntax to create strikethrough text, which is missing from standard Markdown.</p>
+<p><code>~~Mistaken text.~~</code> becomes ~~Mistaken text.~~</p>
+<h3>Underline</h3>
+<p>Underline is powered by raw HTML.</p>
+<p><code>&lt;u&gt;Underline&lt;/u&gt;</code> becomes <u>Underline</u>.</p>
+<h3>Emoji :happy:</h3>
+<p>Input emoji with syntax <code>:smile:</code>. </p>
+<p>User can trigger auto-complete suggestions for emoji by pressing <code>ESC</code> key, or trigger it automatically after enable it on preference panel. Also, input UTF8 emoji char directly from <code>Edit</code> -&gt; <code>Emoji &amp; Symbols</code> from menu bar is also supported. </p>
+<h3>Inline Math</h3>
+<p>To use this feature, first, please enable it in <code>Preference</code> Panel -&gt; <code>Markdown</code> Tab. Then use <code>$</code> to wrap TeX command, for example: <code>$\lim_{x \to \infty} \exp(-x) = 0$</code> will be rendered as LaTeX command. </p>
+<p>To trigger inline preview for inline math: input “$”, then press <code>ESC</code> key, then input TeX command, a preview tooltip will be visible like below:</p>
+<p><img alt="inline-math" src="http://typora.io/img/inline-math.gif" /></p>
+<h3>Subscript</h3>
+<p>To use this feature, first, please enable it in <code>Preference</code> Panel -&gt; <code>Markdown</code> Tab. Then use <code>~</code> to wrap subscript content, for example: <code>H~2~O</code>, <code>X~long\ text~</code>/</p>
+<h3>Superscript</h3>
+<p>To use this feature, first, please enable it in <code>Preference</code> Panel -&gt; <code>Markdown</code> Tab. Then use <code>^</code> to wrap superscript content, for example: <code>X^2^</code>.</p>
+<h3>Highlight</h3>
+<p>To use this feature, first, please enable it in <code>Preference</code> Panel -&gt; <code>Markdown</code> Tab. Then use <code>==</code> to wrap superscript content, for example: <code>==highlight==</code>. </p>
+<div class="footnote">
+<hr />
+<ol>
+<li id="fn:footnote">
+<p>Here is the <em>text</em> of the <strong>footnote</strong>.&#160;<a class="footnote-backref" href="#fnref:footnote" rev="footnote" title="Jump back to footnote 1 in the text">&#8617;</a></p>
+</li>
+</ol>
+</div>
+<script type="text/javascript">if (!document.getElementById('mathjaxscript_pelican_#%@#$@#')) {
+    var align = "center",
+        indent = "0em",
+        linebreak = "false";
+
+    if (false) {
+        align = (screen.width < 768) ? "left" : align;
+        indent = (screen.width < 768) ? "0em" : indent;
+        linebreak = (screen.width < 768) ? 'true' : linebreak;
+    }
+
+    var mathjaxscript = document.createElement('script');
+    var location_protocol = (false) ? 'https' : document.location.protocol;
+    if (location_protocol !== 'http' && location_protocol !== 'https') location_protocol = 'https:';
+    mathjaxscript.id = 'mathjaxscript_pelican_#%@#$@#';
+    mathjaxscript.type = 'text/javascript';
+    mathjaxscript.src = location_protocol + '//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML';
+    mathjaxscript[(window.opera ? "innerHTML" : "text")] =
+        "MathJax.Hub.Config({" +
+        "    config: ['MMLorHTML.js']," +
+        "    TeX: { extensions: ['AMSmath.js','AMSsymbols.js','noErrors.js','noUndefined.js'], equationNumbers: { autoNumber: 'AMS' } }," +
+        "    jax: ['input/TeX','input/MathML','output/HTML-CSS']," +
+        "    extensions: ['tex2jax.js','mml2jax.js','MathMenu.js','MathZoom.js']," +
+        "    displayAlign: '"+ align +"'," +
+        "    displayIndent: '"+ indent +"'," +
+        "    showMathMenu: true," +
+        "    messageStyle: 'normal'," +
+        "    tex2jax: { " +
+        "        inlineMath: [ ['\\\\(','\\\\)'] ], " +
+        "        displayMath: [ ['$$','$$'] ]," +
+        "        processEscapes: true," +
+        "        preview: 'TeX'," +
+        "    }, " +
+        "    'HTML-CSS': { " +
+        "        styles: { '.MathJax_Display, .MathJax .mo, .MathJax .mi, .MathJax .mn': {color: 'inherit ! important'} }," +
+        "        linebreaks: { automatic: "+ linebreak +", width: '90% container' }," +
+        "    }, " +
+        "}); " +
+        "if ('default' !== 'default') {" +
+            "MathJax.Hub.Register.StartupHook('HTML-CSS Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax['HTML-CSS'].FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+            "MathJax.Hub.Register.StartupHook('SVG Jax Ready',function () {" +
+                "var VARIANT = MathJax.OutputJax.SVG.FONTDATA.VARIANT;" +
+                "VARIANT['normal'].fonts.unshift('MathJax_default');" +
+                "VARIANT['bold'].fonts.unshift('MathJax_default-bold');" +
+                "VARIANT['italic'].fonts.unshift('MathJax_default-italic');" +
+                "VARIANT['-tex-mathit'].fonts.unshift('MathJax_default-italic');" +
+            "});" +
+        "}";
+    (document.body || document.getElementsByTagName('head')[0]).appendChild(mathjaxscript);
+}
+</script>
+            </div>
+            <!-- /.entry-content -->
+    <hr/>
+    <section class="comments" id="comments">
+        <h2>Comments</h2>
+
+        <div id="disqus_thread"></div>
+        <script type="text/javascript">
+            /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+            var disqus_shortname = 'timemach'; // required: replace example with your forum shortname
+
+                    var disqus_identifier = 'MarkdownFully-reference';
+                var disqus_url = '/blog/pages/2016/09/07/MarkdownFully-reference/';
+
+            var disqus_config = function () {
+                this.language = "en";
+            };
+
+            /* * * DON'T EDIT BELOW THIS LINE * * */
+            (function () {
+                var dsq = document.createElement('script');
+                dsq.type = 'text/javascript';
+                dsq.async = true;
+                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+            })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by
+            Disqus.</a></noscript>
+        <a href="http://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+
+    </section>
+        </article>
+    </section>
+
+        </div>
+        <div class="col-sm-3" id="sidebar">
+            <aside>
+
+<section class="well well-sm">
+    <ul class="list-group list-group-flush">
+            <li class="list-group-item"><h4><i class="fa fa-home fa-lg"></i><span class="icon-label">Social</span></h4>
+              <ul class="list-group" id="social">
+                <li class="list-group-item"><a href="#"><i class="fa fa-you-can-add-links-in-your-config-file-square fa-lg"></i> You can add links in your config file</a></li>
+                <li class="list-group-item"><a href="https://github.com/6769"><i class="fa fa-github-square fa-lg"></i> github</a></li>
+              </ul>
+            </li>
+
+
+
+
+
+    <li class="list-group-item"><h4><i class="fa fa-external-link-square fa-lg"></i><span class="icon-label">Links</span></h4>
+      <ul class="list-group" id="links">
+        <li class="list-group-item">
+            <a href="http://getpelican.com/" target="_blank">
+                Pelican
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://python.org/" target="_blank">
+                Python.org
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="http://jinja.pocoo.org/" target="_blank">
+                Jinja2
+            </a>
+        </li>
+        <li class="list-group-item">
+            <a href="#" target="_blank">
+                You can modify those links in your config file
+            </a>
+        </li>
+      </ul>
+    </li>
+    </ul>
+</section>
+            </aside>
+        </div>
+    </div>
+</div>
+<footer>
+   <div class="container">
+      <hr>
+      <div class="row">
+         <div class="col-xs-10">&copy; 2016 5pipi
+            &middot; Powered by <a href="https://github.com/getpelican/pelican-themes/tree/master/pelican-bootstrap3" target="_blank">pelican-bootstrap3</a>,
+            <a href="http://docs.getpelican.com/" target="_blank">Pelican</a>,
+            <a href="http://getbootstrap.com" target="_blank">Bootstrap</a>         </div>
+         <div class="col-xs-2"><p class="pull-right"><i class="fa fa-arrow-up"></i> <a href="#">Back to top</a></p></div>
+      </div>
+   </div>
+</footer>
+<script src="/theme/js/jquery.min.js"></script>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="/theme/js/respond.min.js"></script>
+
+    <!-- Disqus -->
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'timemach'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+    <!-- End Disqus Code -->
+
+</body>
+</html>
